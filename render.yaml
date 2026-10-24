@@ -1,0 +1,24 @@
+services:
+  - type: worker
+    name: dma-bot-mr-dma-500k
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    disk:
+      name: dma-bot-session
+      mountPath: /opt/render/project/src/auth_info
+      sizeGB: 1
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: OWNER_TELEGRAM_ID
+        sync: false
+      - key: OWNER_WHATSAPP_NUMBER
+        sync: false
+      - key: REQUIRED_CHANNEL_URL
+        value: https://whatsapp.com/channel/0029VbD3i9hAInPm8CdFCe1M
+      - key: PREFIX
+        value: .
+      - key: BOT_NAME
+        value: DMA BOT — MR DMA 500K
