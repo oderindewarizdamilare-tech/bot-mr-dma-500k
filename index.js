@@ -53,7 +53,7 @@ ${CHANNEL_URL}
 
 Note: This is the starter build. More commands should only be listed after they are implemented and tested.`;
 
-function isOwner(msg) {
+function isOwner(msg) { 
   return msg && msg.from && String(msg.from.id) === OWNER_TELEGRAM_ID;
 }
 
