@@ -1,13 +1,13 @@
 {
   "name": "dma-bot-mr-dma-500k",
-  "version": "1.0.0",
-  "description": "DMA BOT — MR DMA 500K (Telegram control + WhatsApp Web starter)",
+  "version": "2.0.0",
+  "description": "MR DMA 500K BOT - Telegram and WhatsApp",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "engines": {
-    "node": ">=20"
+    "node": "20.x"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "^6.7.18",
